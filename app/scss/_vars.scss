@@ -1,0 +1,46 @@
+$text-blue: #000B6A;
+$green: #5FFF8B;
+$red: #FF6161;
+$yellow: #FFE70C;
+$purple: #520477;
+$blue: #32DAE4;
+
+//Glass Items
+%glass {
+    background: linear-gradient(102.95deg, rgba(238, 238, 238, 0.3) 3.43%, rgba(238, 238, 238, 0.1) 96.88%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+}
+%btn {
+    width: 400px;
+    padding: 13px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $text-blue;
+    transition: all .3s;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #D6D6D6;
+    }
+}
+%radio {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(1000px);
+    position: absolute;
+    visibility: hidden;
+}

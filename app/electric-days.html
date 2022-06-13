@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+
+        <!-- Фон -->
+        <img class="main__bg" src="images/cities-bg/kyiv.png">
+        <div class="main__bg-cover"></div>
+
+        <!-- Логотип -->
+        <a class="main__logo" href="#">
+            <svg width="208" height="60" viewBox="0 0 208 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M102.144 43L102.108 24.64L93 39.94H91.344L82.236 24.748V43H78.78V17.8H81.732L92.244 35.512L102.612 17.8H105.564L105.6 43H102.144ZM134.223 33.568C134.223 33.832 134.199 34.18 134.151 34.612H118.671C118.887 36.292 119.619 37.648 120.867 38.68C122.139 39.688 123.711 40.192 125.583 40.192C127.863 40.192 129.699 39.424 131.091 37.888L132.999 40.12C132.135 41.128 131.055 41.896 129.759 42.424C128.487 42.952 127.059 43.216 125.475 43.216C123.459 43.216 121.671 42.808 120.111 41.992C118.551 41.152 117.339 39.988 116.475 38.5C115.635 37.012 115.215 35.332 115.215 33.46C115.215 31.612 115.623 29.944 116.439 28.456C117.279 26.968 118.419 25.816 119.859 25C121.323 24.16 122.967 23.74 124.791 23.74C126.615 23.74 128.235 24.16 129.651 25C131.091 25.816 132.207 26.968 132.999 28.456C133.815 29.944 134.223 31.648 134.223 33.568ZM124.791 26.656C123.135 26.656 121.743 27.16 120.615 28.168C119.511 29.176 118.863 30.496 118.671 32.128H130.911C130.719 30.52 130.059 29.212 128.931 28.204C127.827 27.172 126.447 26.656 124.791 26.656ZM154.07 41.884C153.566 42.316 152.942 42.652 152.198 42.892C151.454 43.108 150.686 43.216 149.894 43.216C147.974 43.216 146.486 42.7 145.43 41.668C144.374 40.636 143.846 39.16 143.846 37.24V26.764H140.606V23.92H143.846V19.744H147.302V23.92H152.774V26.764H147.302V37.096C147.302 38.128 147.554 38.92 148.058 39.472C148.586 40.024 149.33 40.3 150.29 40.3C151.346 40.3 152.246 40 152.99 39.4L154.07 41.884ZM179.179 33.568C179.179 33.832 179.155 34.18 179.107 34.612H163.627C163.843 36.292 164.575 37.648 165.823 38.68C167.095 39.688 168.667 40.192 170.539 40.192C172.819 40.192 174.655 39.424 176.047 37.888L177.955 40.12C177.091 41.128 176.011 41.896 174.715 42.424C173.443 42.952 172.015 43.216 170.431 43.216C168.415 43.216 166.627 42.808 165.067 41.992C163.507 41.152 162.295 39.988 161.431 38.5C160.591 37.012 160.171 35.332 160.171 33.46C160.171 31.612 160.579 29.944 161.395 28.456C162.235 26.968 163.375 25.816 164.815 25C166.279 24.16 167.923 23.74 169.747 23.74C171.571 23.74 173.191 24.16 174.607 25C176.047 25.816 177.163 26.968 177.955 28.456C178.771 29.944 179.179 31.648 179.179 33.568ZM169.747 26.656C168.091 26.656 166.699 27.16 165.571 28.168C164.467 29.176 163.819 30.496 163.627 32.128H175.867C175.675 30.52 175.015 29.212 173.887 28.204C172.783 27.172 171.403 26.656 169.747 26.656ZM196.47 43.216C194.574 43.216 192.87 42.796 191.358 41.956C189.846 41.116 188.658 39.964 187.794 38.5C186.954 37.012 186.534 35.332 186.534 33.46C186.534 31.588 186.954 29.92 187.794 28.456C188.658 26.968 189.846 25.816 191.358 25C192.87 24.16 194.574 23.74 196.47 23.74C198.366 23.74 200.058 24.16 201.546 25C203.058 25.816 204.234 26.968 205.074 28.456C205.938 29.92 206.37 31.588 206.37 33.46C206.37 35.332 205.938 37.012 205.074 38.5C204.234 39.964 203.058 41.116 201.546 41.956C200.058 42.796 198.366 43.216 196.47 43.216ZM196.47 40.192C197.694 40.192 198.786 39.916 199.746 39.364C200.73 38.788 201.498 37.996 202.05 36.988C202.602 35.956 202.878 34.78 202.878 33.46C202.878 32.14 202.602 30.976 202.05 29.968C201.498 28.936 200.73 28.144 199.746 27.592C198.786 27.04 197.694 26.764 196.47 26.764C195.246 26.764 194.142 27.04 193.158 27.592C192.198 28.144 191.43 28.936 190.854 29.968C190.302 30.976 190.026 32.14 190.026 33.46C190.026 34.78 190.302 35.956 190.854 36.988C191.43 37.996 192.198 38.788 193.158 39.364C194.142 39.916 195.246 40.192 196.47 40.192Z"
+                    fill="white" />
+                <path d="M5 18.1273C22.425 -0.836865 39 40.585 56 18.1273" stroke="white" stroke-width="4" />
+                <path d="M5 29.1273C22.425 10.1631 39 51.585 56 29.1273" stroke="white" stroke-width="4" />
+                <path d="M5 40.1273C22.425 21.1631 39 62.585 56 40.1273" stroke="white" stroke-width="4" />
+            </svg>
+        </a>
+
+        <!-- Іконка голового меню -->
+        <div class="main__menu-icon">
+            <div class="main__menu-icon-line"></div>
+            <div class="main__menu-icon-line"></div>
+            <div class="main__menu-icon-line"></div>
+        </div>
+
+        <!-- Головне меню -->
+        <div class="main__menu">
+            <ul class="main__menu-list">
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href="#">
+                        ГОЛОВНА
+                    </a>
+                </li>
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href="#">
+                        ПОГОДНІ УМОВИ
+                    </a>
+                </li>
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href="#">
+                        ГАРЯЧА ВОДА
+                    </a>
+                </li>
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href="#">
+                        ОПАЛЕННЯ
+                    </a>
+                </li>
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href=#">
+                        ЕЛЕКТРИЧНЕ НАВАНТЕЖЕННЯ
+                    </a>    
+                </li>
+                <li class="main__menu-item">
+                    <a class="main__menu-link" href="#">
+                        ВІТРОЕНЕРГЕТИЧНІ УСТАНОВКИ
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Міні-віджети -->
+        <div class="main__mini-vigets">
+            <div class="main__mini-viget main__calendar">
+                <div class="main__mini-viget-wrapper">
+                    <img class="main__mini-viget-icon" src="images/icons/clock-icon.svg">
+                    <div class="main__mini-viget-text">
+                        <span>00:00 19.06.2019</span> - <span>24:00 22.12.2019</span>
+                    </div>
+                </div>
+                <svg class="main__mini-viget-close" width="136" height="23" viewBox="0 0 136 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="-2" x2="70.6045" y2="-2" transform="matrix(0.963111 0.269105 -0.110095 0.993921 0 4)" stroke="white"
+                        stroke-width="4" />
+                    <line y1="-2" x2="70.6045" y2="-2" transform="matrix(-0.963111 0.269105 0.110095 0.993921 136 4)" stroke="white"
+                        stroke-width="4" />
+                </svg>
+                <form class="main__mini-viget-more" action="" method="POST">
+                    <label for="">Дата і час початку
+                    <input class="main__calendar-input text-input" id="datetime" type="datetime-local" placeholder="Дата і час початку">
+                    </label>
+                    <label for="">Дата і час кінця
+                    <input class="main__calendar-input text-input" id="datetime" type="datetime-local" placeholder="Дата і час початку">
+                    </label>
+                    <button class="main__calendar-btn simple-btn" type="submit">ЗБЕРЕГТИ</button>
+                </form>
+            </div>
+            <div class="main__mini-viget main__location">
+                <div class="main__mini-viget-wrapper">
+                    <img class="main__mini-viget-icon" src="images/emoji/ukraine-flag-emoji.png">
+                    <div class="main__mini-viget-text">
+                        <span>Київ</span>, Україна
+                    </div>
+                </div>
+                <svg class="main__mini-viget-close" width="136" height="23" viewBox="0 0 136 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line y1="-2" x2="70.6045" y2="-2" transform="matrix(0.963111 0.269105 -0.110095 0.993921 0 4)" stroke="white"
+                        stroke-width="4" />
+                    <line y1="-2" x2="70.6045" y2="-2" transform="matrix(-0.963111 0.269105 0.110095 0.993921 136 4)" stroke="white"
+                        stroke-width="4" />
+                </svg>
+                <form class="main__mini-viget-more" action="" method="POST">
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Київ" type="radio" checked>
+                        <div class="main__mini-viget-radio-label">Київ</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Харків" type="radio">
+                        <div class="main__mini-viget-radio-label">Харків</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Сімферополь" type="radio">
+                        <div class="main__mini-viget-radio-label">Сімферополь</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Одеса" type="radio">
+                        <div class="main__mini-viget-radio-label">Одеса</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Львів" type="radio">
+                        <div class="main__mini-viget-radio-label">Львів</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Луганськ" type="radio">
+                        <div class="main__mini-viget-radio-label">Луганськ</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Донецьк" type="radio">
+                        <div class="main__mini-viget-radio-label">Донецьк</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Кривий Ріг" type="radio">
+                        <div class="main__mini-viget-radio-label">Кривий Ріг</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Дніпро" type="radio">
+                        <div class="main__mini-viget-radio-label">Дніпро</div>
+                    </label>
+                    <label class="main__mini-viget-label">
+                        <input class="main__mini-viget-radio" name="city" value="Івано-Франківськ" type="radio">
+                        <div class="main__mini-viget-radio-label">Івано-Франківськ</div>
+                    </label>
+                    <button class="simple-btn" type="submit">ЗБЕРЕГТИ</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="main__container">
+            <div class="main__days-wrapper">
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Понеділок
+                    </div>
+                    <div class="main__day-items">
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__day-item">
+                            <div class="main__day-text">Телевізор</div>
+                            <div class="main__day-time">17:00-18:00</div>
+                            <div class="main__day-btns">
+                                <a class="main__day-btn-link" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/trash-icon.svg">
+                                </a>
+                                <a class="main__day-btn-link gear-icon" href="#">
+                                    <img class="main__day-btn-img" src="images/icons/gear-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Вівторок
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Середа
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Чертвер
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        П’ятниця
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Субота
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+                <div class="main__day">
+                    <div class="main__window-heading">
+                        Неділя
+                    </div>
+                    <div class="main__day-items">
+                    
+                    </div>
+                    <a class="main__day-add" href="#">ДОДАТИ</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const options = {
+            scales: {
+                x: {
+                    grid: {
+                        color: '#DDDDDD',
+                        tickColor: '#DDDDDD'
+                    },
+                    ticks: {
+                        color: '#FFFFFF',
+                        font: {
+                            family: 'Montserrat'
+                        }
+                    }
+                },
+                y: {
+                    grid: {
+                        color: '#DDDDDD',
+                        tickColor: '#DDDDDD'
+                    },
+                    ticks: {
+                        color: '#FFFFFF',
+                        font: {
+                            family: 'Montserrat'
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false,
+                    labels: {
+                        color: '#FFF',
+                        font: {
+                            family: 'Montserrat'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+        <!-- CHART 1 -->
+        <script>
+            const ctx1 = document.getElementById('weather__temperature_chart');
+            const weather__temperature_chart = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                        //borderRadius: 5
+                    }]
+                },
+                options: options
+            });
+        </script>
+
+        <!-- CHART 2 -->
+        <script>
+            const ctx2 = document.getElementById('weather__temp_duration_chart');
+            const weather__temp_duration_chart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                        borderRadius: 5
+                    }]
+                },
+                options: options
+            });
+        </script>
+
+        <!-- CHART 3 -->
+        <script>
+            const ctx3 = document.getElementById('weather__wind_duration_chart');
+            const weather__wind_duration_chart = new Chart(ctx3, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                        borderRadius: 5
+                    }]
+                },
+                options: options
+            });
+        </script>
+
+        <!-- CHART 4 -->
+        <script>
+            const ctx4 = document.getElementById('costs_chart');
+            const costs_chart = new Chart(ctx4, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                        borderRadius: 5
+                    }]
+                },
+                options: options
+            });
+        </script>
+        <!-- CHART 5 -->
+        <script>
+            const ctx5 = document.getElementById('warm_needs_chart');
+            const warm_needs_chart = new Chart(ctx5, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                    }]
+                },
+                options: options
+            });
+        </script>
+
+        <!-- CHART 6 -->
+        <script>
+            const ctx6 = document.getElementById('electric_gen_chart');
+            const electric_gen_chart = new Chart(ctx6, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                    }]
+                },
+                options: options
+            });
+        </script>
+        <!-- CHART 7 -->
+        <script>
+            const ctx7 = document.getElementById('electric_koef_chart');
+            const electric_koef_chart = new Chart(ctx7, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(34, 255, 96, 0.8)',
+                        borderColor: 'rgba(34, 255, 96, 0.8)',
+                        borderWidth: 2,
+                    }]
+                },
+                options: options
+            });
+        </script>
+
+
+        <!-- CHART 8 -->
+        <script>
+            const ctx8 = document.getElementById('weather_wind_chart');
+            const weather_wind_chart = new Chart(ctx8, {
+                type: 'polarArea',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [30, 20, 10, 5, 10, 10, 8, 2],
+                        backgroundColor: [
+                            'rgba(128, 255, 68, 0.8)',
+                            'rgba(94, 255, 68, 0.8)',
+                            'rgba(68, 255, 143, 0.8)',
+                            'rgba(68, 255, 188, 0.8)',
+                            'rgba(33, 230, 242, 0.8)',
+                            'rgba(68, 255, 188, 0.8)',
+                            'rgba(68, 255, 143, 0.8)',
+                            'rgba(94, 255, 68, 0.8)',
+                        ],
+                        borderColor: [
+                            'rgba(128, 255, 68, 0.8)',
+                            'rgba(94, 255, 68, 0.8)',
+                            'rgba(68, 255, 143, 0.8)',
+                            'rgba(68, 255, 188, 0.8)',
+                            'rgba(33, 230, 242, 0.8)',
+                            'rgba(68, 255, 188, 0.8)',
+                            'rgba(68, 255, 143, 0.8)',
+                            'rgba(94, 255, 68, 0.8)',
+                        ],
+                        borderWidth: 2,
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            display: false,
+                            grid: {
+                                color: 'rgba(255,255,255,0)',
+                                tickColor: 'rgba(255,255,255,0)'
+                            },
+                            ticks: {
+                                color: 'rgba(255,255,255,0)',
+                                font: {
+                                    family: 'Montserrat'
+                                }
+                            }
+                        },
+                        y: {
+                            display: false,
+                            grid: {
+                                color: 'rgba(255,255,255,0)',
+                                tickColor: 'rgba(255,255,255,0)'
+                            },
+                            ticks: {
+                                color: 'rgba(255,255,255,0)',
+                                font: {
+                                    family: 'Montserrat'
+                                }
+                            }
+                        },
+                        r: {
+                            grid: {
+                                color: '#DDDDDD'
+                            },
+                            ticks: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false,
+                            labels: {
+                                color: '#FFF',
+                                font: {
+                                    family: 'Montserrat'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+</body>
+</html> 
